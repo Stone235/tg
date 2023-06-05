@@ -866,6 +866,7 @@ int loop (void) {
     bl_do_reset_authorization (TLS);
   }
 
+  tgl_enable_pfs(TLS);
   set_interface_callbacks ();
   tgl_login (TLS);
   net_loop ();
